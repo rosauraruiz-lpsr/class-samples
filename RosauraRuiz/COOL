@@ -1,0 +1,12 @@
+print("What's your favorite number")
+fave = 22
+
+number1 = raw_input()
+
+number = int(number1)
+
+ 
+if number <22:
+	print("Sorry, you lose. :(") 
+if number >22:
+	print("Hooray, you won! Good choice.")

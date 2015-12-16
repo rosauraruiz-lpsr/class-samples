@@ -1,0 +1,7 @@
+import turtle
+jo = turtle.Turtle()
+j = turtle.Turtle()
+jo.forward(100)
+j.right(180)
+j.forward(100)
+turtle.exitonclick()

@@ -1,0 +1,4 @@
+import turtle
+s = turtle.Turtle()
+s.circle(50)
+turtle.exitonclick()
