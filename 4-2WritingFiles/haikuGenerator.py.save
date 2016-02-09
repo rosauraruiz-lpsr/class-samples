@@ -1,0 +1,19 @@
+# Welcomes the user to the game
+print("Welcome to the Haiku generator!")
+print("Provide the first line of your haiku:")
+# Will make users input into a variable
+a = str(raw_input())
+print("Provide the second line of your haiku:")
+# Will make users input into a variable
+b = str(raw_input())
+print("Provide the third line of your haiku:")
+# Will make users input into a variable
+c = str(raw_input())
+print("What file would you like to write your haiku to?")
+myFile = str(raw_input())
+# Tells you what to do after 
+print("Done! To view your haiku, type 'cat' and the name of your file at the command line.")
+# Adds everything into the new filec
+my_File = open((myFile), "a")
+my_File.write(a + '\n' + b + '\n' + c + '\n') 
+my_File.close()
