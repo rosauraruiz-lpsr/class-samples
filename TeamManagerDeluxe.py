@@ -56,11 +56,8 @@ print("Do you want to start with a new team or existing team?")
 print("Enter the letter of your choice and press enter")
 print("(a) Start with a new team")
 print("(b) Open a file with existing team")
-AorB = raw_input()
+aorb = raw_input()
 
-# if the users choice is a b
-# open the file that they want to open 	
-# and print all the players in the file
 if  aorb == "b" or aorb == "b":
 	print("What's the filename for your existing team? Enter the whole name, including its .tmd extension")
         filename = raw_input()
@@ -68,9 +65,7 @@ if  aorb == "b" or aorb == "b":
 	print("Here are all the players.")
 		
 		
-# if a just print a space to save time and space
-# because the instructions for both a and b 
-# are going to be listed below 
+# if a just print a space to save
 elif aorb == "a" or aorb == "a":
 	print(" ")
 	playerList = []
@@ -84,10 +79,10 @@ while userChoice != "0":
 	print("(2) Print all players")  
 	print("(3) Save your player list to a file") 
 	print("(0) Leave the program (save first to avoid losing your data!)")
-	userChoice = raw_input()
+	Choice = raw_input()
 	
         # if the user chooses 1, let them input their information
-        if userChoice == "1":
+        if Choice == "1":
                 print("Add players name:")
                 userName = raw_input()
                 print("Add players age:")
@@ -102,20 +97,19 @@ while userChoice != "0":
                 # this puts in the users data into the list
                 playerList.append(Player(userName, userAge, userGoals, userJerseyNumber, usersPosition))
 
-	# if the user choose 2, it will print all the information that they had inputed
-        elif userChoice == "2":
+	# if the user choose 2, it will print all the information that they inputed
+        elif Choice == "2":
 		# this creates a loop to print everything in seperate lines
                 for x in playerList:
                         print(" ")
-			# this calls the def function that we made earlier
+			# this calls the def function 
                         x.printStats()
                         print(" ")
 
 	# this saves the players list to a file
-	elif userChoice == "3":
+	elif Choice == "3":
 		print("Enter the name of the file you want to add, make sure to add the extension tmd or txt")
 		newFile = raw_input()
-		#print(playerList)
 		saveTeam(playerList, newFile)
 
 # when the user put in 0, this will appear
