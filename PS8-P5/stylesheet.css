@@ -1,0 +1,15 @@
+h1{
+	position: center;
+	top: 10px;
+	background-color: #FFFFFF;
+}
+
+body{
+	background-color:#E9967A
+}
+ 
+img{
+	height: 170px;
+	width: 170px;
+	box-shadow: rgba(0,0,0,0.2) 10px 10px;
+}
