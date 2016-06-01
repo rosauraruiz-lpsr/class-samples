@@ -12,11 +12,11 @@ import string
 # use Google and/or Stack Overflow to find how to do this in python!
 # returns a list with the lowercase letters a to z
 def getLowercaseAlphabet():
-	lowerCase = list(string.ascii_lowercase)	
-	return lowerCase
+	LC = list(string.ascii_lowercase)	
+	return LC
 def getUppercaseAlphabet():
-	upperCase = list(string.ascii_uppercase)
-	return upperCase
+	UC = list(string.ascii_uppercase)
+	return UC
 def getReorderedLowercaseAlphabet(key):
 	some = string.ascii_lowercase
 	something = []
